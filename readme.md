@@ -98,3 +98,7 @@ Set up steps
 2) Log in to keycloak as admin, and import realm from official webprotege-keycloak repo
 
 3) Add a user to the realm and assign the client role 'user'
+
+4) Go to the webprotege realm, and then Clients -> Installation, and copy the installation config in Keycloak OIDC JSON format
+
+5) Paste the json config into webprotege-server/src/main/webapp/WEB-INF/keycloak.json
