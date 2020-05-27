@@ -83,3 +83,18 @@ To run WebProtégé using the Docker container
    $ docker-compose up
    ```
 3) Browse to WebProtégé in a Web browser by navigating to [http://localhost:5000](http://localhost:5000)
+
+
+Modifications from main webprotege project
+------------------------------------------
+1) Changed BASIC auth method to KEYCLOAK auth method in webprotege-server/pom.xml
+
+2) Switched to tomcat8 adapter for keycloak, and included the adapter in the Dockerfile build
+
+Set up steps
+------------
+1) Set up keycloak and webprotege containers
+
+2) Log in to keycloak as admin, and import realm from official webprotege-keycloak repo
+
+3) Add a user to the realm and assign the client role 'user'
