@@ -1,3 +1,7 @@
+<!--<Context path="/auth">
+    <Valve className="org.keycloak.adapters.tomcat.KeycloakAuthenticatorValve"/>
+</Context>-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <Context reloadable="true">
 
@@ -6,3 +10,5 @@
 
   <Valve className="org.keycloak.adapters.tomcat.KeycloakAuthenticatorValve"/>
 </Context>
+
+

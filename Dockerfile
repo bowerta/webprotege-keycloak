@@ -23,3 +23,6 @@ COPY --from=build /webprotege/webprotege-cli/target/webprotege-cli-4.0.0-beta-3-
 COPY --from=build /webprotege/webprotege-server/target/webprotege-server-4.0.0-beta-3-SNAPSHOT.war ./webprotege.war
 RUN unzip webprotege.war \
     && rm webprotege.war
+
+WORKDIR /usr/local/tomcat/lib
+COPY ./keycloak-adapter .

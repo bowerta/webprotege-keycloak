@@ -1,11 +1,11 @@
 {
   "realm": "webprotege",
-  "auth-server-url": "http://localhost:8080/auth/",
+  "auth-server-url": "https://from.keycloak.admin/auth/",
   "ssl-required": "external",
   "resource": "webprotege-app",
   "public-client": true,
+  "verify-token-audience": true,
+  "use-resource-role-mappings": true,
   "confidential-port": 0,
-  "enable-cors": true,
-  "cors-allowed-methods": "GET, PUT, POST, DELETE",
-  "always-refresh-token" : true
+  "disable-trust-manager": true
 }
